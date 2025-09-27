@@ -29,11 +29,7 @@ public class Sortings{
 		}
 		return arr;
 	}
-
-	public int[] insertionSort(int []arr){
-
-	}
-
+	
 	public void print(int []arr){
 		System.out.print("\nArray => ");
 		for(int i = 0; i < arr.length; ++i){

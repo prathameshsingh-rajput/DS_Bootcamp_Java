@@ -1,10 +1,10 @@
 /*
-Questions 1 Problem Statement – Bela teaches her daughter to find the factors of a given number.
+Questions 1 Problem Statement ï¿½ Bela teaches her daughter to find the factors of a given number.
 When she provides a number to her daughter, she should tell the factors of that number.
 Help her to do this, by writing a program. Write a class FindFactor.java and write the main method in it.
 Note :
-•	If the input provided is negative, ignore the sign and provide the output. If the input is zero
-•	If the input is zero the output should be “No Factors”.
+ï¿½	If the input provided is negative, ignore the sign and provide the output. If the input is zero
+ï¿½	If the input is zero the output should be ï¿½No Factorsï¿½.
 
 */
 import java.util.Scanner;
@@ -16,7 +16,7 @@ public class FindFactor{
 				System.out.print(i+" ");
 			}
 		}
-		System.out.println();x
+		System.out.println();
 	}
 	public static void main(String []a){
 		Scanner in = new Scanner(System.in);

@@ -5,6 +5,26 @@ Compress a string by replacing consecutive repeated characters with character + 
 import java.util.Scanner;
 
 public class CompressString{
+	public static void compressStr(String s){
+		StringBuilder sb = new StringBuilder();
+		int i = 1, ptr = 0;
+		int n = s.length();
+		while(i < n-1)
+		{
+			int count = 1;
+			char ch = s.charAt(ptr);
+
+			while(i < n && ch == s.charAt(i)){
+				i++;
+				count++;
+			}
+			ptr = i;
+			sb.append(ch);
+			if( count != 1) sb.append(count);
+		}
+
+		System.out.println(sb);
+	}
 	public static String compressString(String str)
 	{
 		if(str == null || str.length() <= 1) return str;
@@ -48,7 +68,8 @@ public class CompressString{
 		Scanner in = new Scanner(System.in);
 		String input = in.next();
 
-		System.out.println("\n"+input+" string's compressed version: "+obj.compressString(input));
+		obj.compressStr(input);
+		//System.out.println("\n"+input+" string's compressed version: "+obj.compressStr(input));
 	}
 
 }
